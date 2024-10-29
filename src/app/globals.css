@@ -40,3 +40,11 @@ a {
     color-scheme: dark;
   }
 }
+
+.main {
+  margin-top: 100px;
+}
+
+.post {
+  margin: 20px;
+}
