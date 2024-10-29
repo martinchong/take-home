@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a take home assignment creating a NextJS blog site using markdowns.
 
 ## Getting Started
 
@@ -25,3 +25,5 @@ yarn start
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start adding .md files to the _posts folder as well as their cover images to public/assets/blog/*. The blog posts should be generated to the website after.
+
+If any of the components seem out of place, that is because for simplicity sake, I used some of my personal code from my personally projects.
