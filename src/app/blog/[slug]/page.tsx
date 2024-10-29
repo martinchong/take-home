@@ -3,7 +3,9 @@ import Image from "next/image";
 
 import { markdownToHtml } from "@/util/remark";
 import { getAllPosts, getPostBySlug } from "@/util/post";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
+
+import styles from './page.module.scss'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Post = async({ params }: any) => {
@@ -30,7 +32,16 @@ const Post = async({ params }: any) => {
     <main className="main">
       <Container>
         {image}
-        <article className="post__article">
+        <article>
+          <Typography variant="h3" className={styles.post__title}>
+            {post.title}
+          </Typography>
+          <Typography variant="h4" className={styles.post__author}>
+            {post.author}
+          </Typography>
+          <Typography variant="h5" className={styles.post__date}>
+            {post.date}
+          </Typography>
           <div
             className="post__body"
             dangerouslySetInnerHTML={{ __html: content }}

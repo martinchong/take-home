@@ -1,0 +1,17 @@
+.post {
+  &__title {
+    color: pink;
+    margin-top: 12px;
+  }
+
+  &__author {
+    color: cadetblue;
+    margin-bottom: 8px;
+  }
+
+  &__date {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+}
